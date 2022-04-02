@@ -1,0 +1,9 @@
+// mixin example
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+@mixin flex-stretch {
+  display: flex;
+  align-items: stretch;
+}

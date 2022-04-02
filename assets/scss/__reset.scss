@@ -1,0 +1,29 @@
+html {
+  body {
+    // mixin added
+    @include reset;
+    font-family: $font-body;
+    font-size: $font-size;
+    line-height: 1.2;
+    font-weight: 400;
+    * {
+      // mixin added
+      @include reset;
+    }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: $gray-800;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

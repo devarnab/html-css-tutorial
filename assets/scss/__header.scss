@@ -1,0 +1,63 @@
+.container {
+  max-width: $max-container-width;
+  margin: 0 auto;
+  height: 100%;
+}
+
+header {
+  background-color: $gray-300;
+  .container {
+    @include flex-stretch;
+    justify-content: space-between;
+    height: 60px;
+    .logo {
+      align-self: center;
+      a {
+        display: inline-block;
+        font-size: $font-size * 2;
+        font-family: $font-logo;
+      }
+      p {
+        font-size: small;
+        text-transform: uppercase;
+      }
+    }
+    .navigation {
+      @include flex-stretch;
+      ul {
+        list-style: none;
+        @include flex-stretch;
+        li {
+          display: flex;
+          align-items: center;
+          background-color: $gray-400;
+          padding: 0 20px;
+          &:hover {
+            background-color: $gray-300;
+            a {
+              color: $gray-900;
+            }
+          }
+          a {
+            text-transform: capitalize;
+            display: block;
+          }
+        }
+      }
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      label {
+        display: none;
+      }
+      input,
+      button {
+        padding: 0 15px;
+      }
+      input {
+        width: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    footer {
+      background-color: $gray-200;
+      margin-top: auto;
+      display: block;
+      .container {
+        display: flex;
+        column-gap: 20px;
+        align-items: stretch;
+        padding: 15px 0;
+        p {
+          flex-basis: 50%;
+        }
+        ul.footer-link {
+          align-self: center;
+          li {
+            a {
+              color: $gray-800;
+            }
+          }
+        }
+      }
+    }
+  }
+}

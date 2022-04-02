@@ -1,0 +1,9 @@
+.main {
+  @include flex-stretch;
+  gap: 15px;
+  aside {
+    flex-basis: 300px;
+  }
+  .content {
+  }
+}
